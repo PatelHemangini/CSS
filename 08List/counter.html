@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            counter-reset:li;
+        }
+        ol>li::before{
+            counter-increment: li;
+            content: counter(li)".";
+        }
+        /* ol>li::after{
+            counter-increment: li;
+            content: counter(li);
+        } */
+    </style>
+</head>
+<body>
+    <ol>
+        <li>first order</li>
+        <li>second order</li>
+        <ol>
+            <li>first order</li>
+            <li>second order</li>
+            <ol>
+                <li>first order</li>
+                <li>second order</li>   
+            </ol>
+        </ol>
+    </ol>
+</body>
+</html>

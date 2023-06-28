@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  /* Set "my-sec-counter" to 0 */
+  counter-reset: h2;
+}
+
+h2::before {
+  /* Increment "my-sec-counter" by 1 */
+  counter-increment: h2;
+  content: "Section " counter(h2) ". ";
+  counter-reset: p;
+}
+p::before{
+  counter-increment: p ;                    
+  content:counter(h2)"."  counter(p) ". "; 
+  
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Tutorial <p>html stands for hyper text mark up language.</p><p>html is used to create scalaten of website.</p></h2>
+<h2>CSS Tutorial <p>html stands for hyper text mark up language.</p><p>html is used to create scalaten of website.</p></h2>
+<h2>JavaScript Tutorial</h2>
+<h2>Bootstrap Tutorial</h2>
+<h2>SQL Tutorial</h2>
+<h2>PHP Tutorial</h2>
+
+</body>
+</html>
