@@ -1,0 +1,128 @@
+/* .container{
+    background-color: white;
+    width: 100%;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+.container{
+margin: 0 auto;   
+width:50%;
+display: grid;
+grid-template-rows:50px 300px 100px 100px 70px ;
+grid-template-columns:1fr 1fr 1fr 1fr ;
+
+grid-template-areas: 
+"Header Menu Menu Menu"
+"Hero Hero Hero Hero"
+"Main Main None Image"
+"Main Main None Extra"
+"Banner Banner Banner Banner" ;
+}
+.col{
+    display: flex;
+    color: white;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.col1{
+    grid-area: Header;
+    background-color: black;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.col2{
+    grid-area: Menu;
+    background-color: red;
+}
+.col3{
+    grid-area: Hero;
+    background-color: rgb(0, 221, 255);
+}
+.col4{
+    grid-area: Main;
+    background-color: rgba(0, 0, 0, 0.241);
+}
+.col5{
+    grid-area:Banner;
+    background-color: rgb(243, 243, 146);
+}
+.col6{
+    grid-area: Extra;
+    background-color: rgb(141, 224, 141);
+}
+.col7{
+    grid-area: Image;
+    background-color: rgb(164, 224, 225);
+}
+
+/* @media(max-width:820px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:20px 50px 40px 30px 30px ;
+        grid-template-areas: 
+        "Header Header Header"
+        "Hero Hero Hero"
+        "Menu Main Main"
+        "Menu Banner Banner"
+        "Menu Extra Image";
+    }
+} */ 
+
+
+  /* Styles for tablets and desktops */
+@media (max-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:20px 50px 40px 30px 30px ;
+        grid-template-areas: 
+        "Header Header Header"
+        "Hero Hero Hero"
+        "Menu Main Main"
+        "Menu Banner Banner"
+        "Menu Extra Image";
+    } 
+   
+    
+  }
+  @media (max-width:320PX) {
+.container{
+    display: grid;
+    grid-template-rows: 20px 30px 50px 40px 40px 35px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "Header"
+    "Menu"
+    "Hero"
+    "Main"
+    "Banner"
+    "Extra"
+    "Image";
+}
+}
+  
+  /* Styles for larger screens */
+  /* @media (min-width: 1200px) {
+    .container{
+        margin: 0 auto;   
+        width:50%;
+        display: grid;
+        grid-template-rows:50px 300px 100px 100px 70px ;
+        grid-template-columns:1fr 1fr 1fr 1fr ;
+        
+        grid-template-areas: 
+        "Header Menu Menu Menu"
+        "Hero Hero Hero Hero"
+        "Main Main None Image"
+        "Main Main None Extra"
+        "Banner Banner Banner Banner" ;
+        }
+  } */
