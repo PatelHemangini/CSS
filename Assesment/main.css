@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.bg {
+    /* width: 100%; */
+    height: 400px;
+    background-image: url(./Img/background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(3px); */
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content {
+    border: 1px solid;
+    width: 25%;
+    height: 230px;
+    margin-right: 5rem;
+    background-color: rgba(213, 215, 217, 0.275);
+    /* background: transparent; */
+    backdrop-filter: blur(10px);
+    /* text-align: center;
+    justify-content: center;
+    align-content: center; */
+    padding: 20px;
+}
+
+.menu {
+    width: 15%;
+    height: 400px;
+    background-color: rgba(112, 128, 144, 0.49);
+    backdrop-filter: blur(10px);
+    border: 1px solid;
+    text-align: center;
+    padding: 16px;
+}
+
+.name {
+    /* height: 50px; */
+    /* width: 40%; */
+    /* border: 1px solid; */
+    border-style: ridge;
+    border: 1px solid white;
+    padding: 15px 15px;
+    margin-top: -5px;
+    margin-bottom: 3px;
+    margin-right: 4px;
+    margin-left: -5px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.bor {
+    border: 1px solid white;
+    text-align: center;
+    margin: 30px;
+    margin-top: 5px;
+
+}
+
+.list li {
+    text-align: right;
+    padding: 5px;
+    color: white;
+    list-style: none;
+}
+
+.list {
+    padding: 10px 45px;
+}
+
+.icon {
+    /* padding: 10px; */
+    margin: 10px;
+}
+
+.icon i {
+    margin: 10px;
+    color: white;
+}
+
+.foot p {
+    font-size: small;
+    color: white;
+    margin: 5px;
+}
