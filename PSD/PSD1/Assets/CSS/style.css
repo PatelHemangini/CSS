@@ -1,0 +1,80 @@
+@font-face {
+    font-family:"Lato" ;
+    src: url(../Font/lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "Cardo";
+    src: url(../Font/Cardo/Cardo-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 40px auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul li{
+    display: inline-block;
+    padding-right: 30px;
+    font-family: "Lato";
+    font-size: 20px;
+    
+}
+li a{
+    color:  #232323;
+    text-decoration: none;
+}
+button{
+   background-color: white;
+   padding: 7px 20px;
+   border-radius: 5px;
+   font-size: 15px;
+   font-family: "Lato"; 
+}
+.col1{
+    width: 30%;
+}
+.col1 h1{
+    font-family: "Cardo";
+    font-size: 65px;
+}
+.col1 button{
+    background-color: #232323;
+    color:  #e9e7e7;
+}
+p{
+    font-family: "Lato";
+    text-align: justify;
+}
+.col100{
+    
+    height: 387px;
+    background-color: #232323;
+
+}
+.col40{
+    width: 40%;
+    color: #e9e7e7 ;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+.col40 h2{
+    font-size: 40px;
+}
+.col40 button{
+    
+    background-color: transparent;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Lato";
+    color: white;
+    border: 1px solid white;
+}
