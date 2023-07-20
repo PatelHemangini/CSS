@@ -40,7 +40,7 @@ button{
 .col1{
     width: 30%;
 }
-.col1 h1{
+.col1 h1,.col45 h1{
     font-family: "Cardo";
     font-size: 65px;
 }
@@ -51,6 +51,7 @@ button{
 p{
     font-family: "Lato";
     text-align: justify;
+
 }
 .col100{
     
@@ -67,6 +68,7 @@ p{
 }
 .col40 h2{
     font-size: 40px;
+    font-family: "Cardo";
 }
 .col40 button{
     
@@ -77,4 +79,91 @@ p{
     font-family: "Lato";
     color: white;
     border: 1px solid white;
+}
+.col30{
+    width: 30%;
+    margin: 50px auto;
+}
+span{
+    width: 10%; 
+    height: 2px; 
+    background-color: black; 
+    display: block;
+    /* margin: 20px; */
+}
+.col30 h2{
+    width:50%;
+    font-family: "Cardo";
+    /* font-weight: bolder; */
+}
+.col45{
+    margin: 80px auto;
+    width: 45%;
+    text-align: center;
+    /* align-items: center; */
+}
+.col45 p{
+    text-align: center;
+    font-weight: bold;
+}
+.fa-solid{
+    font-size: 50px;
+    /* background-color: #232323; */
+}
+.col50{
+    width: 50%;
+    /* display: flex; */
+}
+.col50_1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: left;
+}
+.col50_40{
+    width: 40%;
+    font-family: "Cardo";
+    font-size: 25px;
+    text-align: left;
+    text-decoration: underline;
+}
+.col50_50{
+    width: 50%;
+    padding-top: 15px;
+    text-indent: 1;
+    position: relative;
+}
+.fa-arrow-right{
+    font-size: 50px;
+    text-align: end;
+    position: absolute;
+    top: 290px;
+    left: 250px;
+}
+.col{
+    width: 100%;
+    background-color: black;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+    
+}
+.text{
+    width:40% ;
+    color: white;
+    padding: 0px 60px;
+    display: grid;
+    justify-content: space-between;
+}
+.img{
+    width: 50%;
+   
+}  
+.img img{
+    width: 100%;
+}
+.text h2{
+    font-family: "Cardo";
+    font-size: 40px;
 }
