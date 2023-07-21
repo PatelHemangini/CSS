@@ -26,7 +26,7 @@
     font-size: 20px;
     
 }
-li a{
+.nav li a{
     color:  #232323;
     text-decoration: none;
 }
@@ -53,11 +53,14 @@ p{
     text-align: justify;
 
 }
-.col100{
+.col_100{
     
-    height: 387px;
-    background-color: #232323;
+   width: 100%;
 
+}
+.sec2{
+    background: rgb(35,35,35);
+    background: linear-gradient(180deg, rgba(35,35,35,1) 34%, rgba(255,254,253,1) 36%);;
 }
 .col40{
     width: 40%;
@@ -131,14 +134,14 @@ span{
     width: 50%;
     padding-top: 15px;
     text-indent: 1;
-    position: relative;
+    
 }
 .fa-arrow-right{
     font-size: 50px;
     text-align: end;
-    position: absolute;
-    top: 290px;
-    left: 250px;
+    position: relative;
+    top: 137px;
+    left: 225px;
 }
 .col{
     width: 100%;
@@ -150,20 +153,106 @@ span{
     
 }
 .text{
-    width:40% ;
+    width:50% ;
     color: white;
     padding: 0px 60px;
-    display: grid;
-    justify-content: space-between;
+   
 }
 .img{
-    width: 50%;
+    width: 45%;
    
 }  
-.img img{
+img{
     width: 100%;
 }
-.text h2{
+.box1{
+    padding-bottom: 10px;
     font-family: "Cardo";
     font-size: 40px;
 }
+.box2{
+    padding-top: 40px;
+    padding-right: 20px;
+}
+.box2 h4{
+font-size: 25px;
+letter-spacing: -1px;
+font-weight: 900;
+font-family: "Lato";
+padding-bottom: 10px;
+}
+.col-text{
+    width: 60%;
+}
+.col-img{
+    width: 30%;
+}
+.sectxt{
+font-size: 81px;
+letter-spacing: -2px;
+line-height: 81px;
+color: #232323;
+font-weight: 700;
+font-family: "Cardo";
+padding-bottom: 90px;
+}
+.secline{
+/* width: 1404px; */
+/* height: 39px; */
+font-size: 17px;
+letter-spacing: 0px;
+color: #232323;
+font-weight: 400;
+font-family: "Lato";
+text-align: left;
+line-height: 55px;
+text-indent: 20px;
+}
+.line_all{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.line_bottom{
+    border-bottom: 1px solid black;
+}
+.fa-plus{
+    /* display: block; */
+    text-align: center;
+    font-size: 20px;
+    padding-left: 80px;
+}
+.pad_t_b{
+    padding: 80px 0px;
+}
+.sec7_txt{
+/* width: 50%; */
+font-size:50px;
+letter-spacing: -2px;
+line-height: 81px;
+color: #232323;
+font-weight: 500;
+font-family: "Cardo";
+text-align: center;
+margin: 0 auto;
+}
+
+
+.circle i {
+    /* padding: 30px 30px; */
+    color: white;
+    background-color:#232323;
+    border-radius: 50px;
+    font-size: 80px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.sec7_box{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 40px 20px;
+   
+    justify-content: center;
+}
+
+
