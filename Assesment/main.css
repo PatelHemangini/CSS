@@ -11,8 +11,11 @@
 .bg {
     height: 400px;
     background-image: url(./Img/background);
+    /* filter: blur(5px); */
+  
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .row {
@@ -23,7 +26,7 @@
 }
 
 .content {
-    height: 275px;
+    height: 230px;
     margin-right: 5rem;
     background-color: rgba(213, 215, 217, 0.275);
     backdrop-filter: blur(10px);
@@ -91,7 +94,6 @@
 .col1{
     background-color: rgba(51, 50, 50, 0.589);
     width: 15%;
-    height: 2500px;
 }
 .about{
     width: 35%;
@@ -108,17 +110,7 @@
     display: flex;
     justify-content:space-evenly;
 }
-/* .img{
-    border-style: ridge;
-    border: 1px solid rgb(218, 211, 211);
-    padding: 15px 15px;
-    margin-top: -5px;
-    margin-bottom: 3px;
-    margin-right: 4px;
-    margin-left: -5px;
-    color: rgb(25, 95, 175);
-text-align: left;
-} */
+
 h4{
     color: rgb(25, 95, 175);
     text-align: left;
@@ -127,7 +119,7 @@ h4{
     border: 1px solid  rgb(218, 211, 211);
     margin: 82px;
     margin-top: 5px;
-    /* align-items: center; */
+   
 }
 
 .name img{
@@ -143,7 +135,7 @@ h4{
     width: 60%;
     margin: 0 100px;
     margin-top: 8px;
-    /* text-align: justify; */
+ 
 }
 .col2_4{
     width: 81%;
@@ -160,7 +152,7 @@ margin: 5px 5px;
 border: 1px solid rgb(218, 211, 211);
 }
 .col2_5_1{
-    width: 40%;
+    width: 45%;
    
 }  
 p{
@@ -168,6 +160,31 @@ p{
     text-align: justify;
 }
 .col2_5_2{
-    width: 40%;
+    width: 45%;
    
 }  
+.col2_5{
+    width: 90%;
+    margin: 0 auto;
+}
+#form input,#form textarea{
+    width: 50%;
+    border: none;
+   
+    margin: 5px 0px;
+    font-size: 15px;
+    border-style: outset;
+    border-bottom: 1px solid gray;
+}
+#form textarea{
+    padding: 10px;
+    display: block;
+}
+#form button{
+margin-left: 14em;
+margin-top: 5px;
+border: none;
+border-style: outset;
+border-bottom: 1px solid gray;
+padding: 7px;
+}
