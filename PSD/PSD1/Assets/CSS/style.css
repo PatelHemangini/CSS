@@ -1,80 +1,98 @@
 @font-face {
-    font-family:"Lato" ;
+    font-family: "Lato";
     src: url(../Font/lato/Lato-Regular.ttf);
 }
+
 @font-face {
     font-family: "Cardo";
+
     src: url(../Font/Cardo/Cardo-Bold.ttf);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 1200px;
     margin: 40px auto;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
 }
-.nav ul li{
+
+.nav ul li {
     display: inline-block;
     padding-right: 30px;
     font-family: "Lato";
     font-size: 20px;
-    
+
 }
-.nav li a{
-    color:  #232323;
+
+.nav li a {
+    color: #232323;
     text-decoration: none;
 }
-button{
-   background-color: white;
-   padding: 7px 20px;
-   border-radius: 5px;
-   font-size: 15px;
-   font-family: "Lato"; 
+
+button {
+    background-color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Lato";
 }
-.col1{
+
+.col1 {
     width: 30%;
 }
-.col1 h1,.col45 h1{
+
+.col1 h1,
+.col45 h1 {
     font-family: "Cardo";
     font-size: 65px;
     font-weight: 700px;
 }
-.col1 button{
+
+.col1 button {
     background-color: #232323;
-    color:  #e9e7e7;
+    color: #e9e7e7;
 }
-p{
+
+p {
     font-family: "Lato";
     text-align: justify;
 
 }
-.col_100{
-    
+
+.col_100 {
+
     width: 100%;
 
 }
-.bg_color{
-     background-color: black;
+
+.bg_color {
+    background-color: black;
 }
-.col40{
+
+.col40 {
     width: 40%;
-    color: #e9e7e7 ;
+    color: #e9e7e7;
     margin: 0 auto;
     padding: 50px;
     text-align: center;
 }
-.col40 h2{
+
+.col40 h2 {
     font-size: 40px;
     font-family: "Cardo";
 }
-.col40 button{
-    
+
+.col40 button {
+
     background-color: transparent;
     padding: 7px 20px;
     border-radius: 5px;
@@ -83,217 +101,256 @@ p{
     color: white;
     border: 1px solid white;
 }
-.col30{
+
+.col30 {
     width: 30%;
     /* border: 1px solid; */
-   
+
 }
-.mx{
+
+.mx {
     margin: 50px auto;
 }
-span{
-    width: 10%; 
-    height: 2px; 
-    background-color: black; 
+
+span {
+    width: 10%;
+    height: 2px;
+    background-color: black;
     display: block;
     margin-top: 20px;
 }
-.col30 h2{
-    width:50%;
+
+.col30 h2 {
+    width: 50%;
     font-family: "Cardo";
     /* font-weight: bolder; */
-   margin: 20px 0px;
+    margin: 20px 0px;
 }
-.col45{
+
+.col45 {
     margin: 80px auto;
     width: 45%;
     text-align: center;
-   
+
 }
-.col45 p{
+
+.col45 p {
     text-align: center;
     font-weight: bold;
 }
-.fa-solid{
+
+.fa-solid {
     font-size: 50px;
-}  
-.col50{
-    width: 50%;
-    
 }
-.col50_1{
+
+.col50 {
+    width: 50%;
+
+}
+
+.col50_1 {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     text-align: left;
 }
-.col50_40{
+
+.col50_40 {
     width: 40%;
     font-family: "Cardo";
     font-size: 25px;
     text-align: left;
     text-decoration: underline;
 }
-.col50_50{
+
+.col50_50 {
     width: 50%;
     padding-top: 15px;
     text-indent: 1;
-    
+
 }
-.fa-arrow-right{
+
+.fa-arrow-right {
     font-size: 50px;
     text-align: end;
     /* position: relative; */
     top: 137px;
     left: 225px;
 }
-.col{
+
+.col {
     width: 100%;
     background-color: black;
     padding: 80px 0px;
     display: flex;
     justify-content: space-between;
     /* background-color: black; */
-    
+
 }
-.text{
-    width:50% ;
+
+.text {
+    width: 50%;
     color: white;
     padding: 0px 60px;
-   
+
 }
-.img{
+
+.img {
     width: 45%;
-   
-}  
-img{
+
+}
+
+img {
     width: 100%;
 }
-.box1{
+
+.box1 {
     padding-bottom: 10px;
     font-family: "Cardo";
     font-size: 40px;
 }
-.box2{
+
+.box2 {
     padding-top: 40px;
     padding-right: 20px;
 }
-.box2 h4{
-font-size: 25px;
-letter-spacing: -1px;
-font-weight: 900;
-font-family: "Lato";
-padding-bottom: 10px;
+
+.box2 h4 {
+    font-size: 25px;
+    letter-spacing: -1px;
+    font-weight: 900;
+    font-family: "Lato";
+    padding-bottom: 10px;
 }
-.col-text{
+
+.col-text {
     width: 60%;
 }
-.col-img{
+
+.col-img {
     width: 30%;
 }
-.sectxt{
-font-size: 81px;
-letter-spacing: -2px;
-line-height: 81px;
-color: #232323;
-font-weight: 700;
-font-family: "Cardo";
-padding-bottom: 90px;
+
+.sectxt {
+    font-size: 81px;
+    letter-spacing: -2px;
+    line-height: 81px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    padding-bottom: 90px;
 }
-.secline{
-/* width: 1404px; */
-/* height: 39px; */
-font-size: 17px;
-color: #232323;
-font-weight: 400;
-font-family: "Lato";
-text-align: left;
-line-height: 55px;
-text-indent: 20px;
+
+.secline {
+    /* width: 1404px; */
+    /* height: 39px; */
+    font-size: 17px;
+    color: #232323;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: left;
+    line-height: 55px;
+    text-indent: 20px;
 }
-.line_all{
+
+.line_all {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-.line_bottom{
+
+.line_bottom {
     border-bottom: 1px solid black;
 }
-.fa-plus{
+
+.fa-plus {
     /* display: block; */
     text-align: center;
     font-size: 20px;
     padding-left: 80px;
 }
-.pad_t_b{
+
+.pad_t_b {
     padding: 80px 0px;
 }
-.sec7_txt{
-/* width: 50%; */
-font-size:50px;
-letter-spacing: -2px;
-line-height: 81px;
-color: #232323;
-font-weight: 500;
-font-family: "Cardo";
-text-align: center;
-margin: 0 auto;
+
+.sec7_txt {
+    /* width: 50%; */
+    font-size: 50px;
+    letter-spacing: -2px;
+    line-height: 81px;
+    color: #232323;
+    font-weight: 500;
+    font-family: "Cardo";
+    text-align: center;
+    margin: 0 auto;
 }
 
 
 .circle i {
     /* padding: 30px 30px; */
     color: white;
-    background-color:#232323;
+    background-color: #232323;
     border-radius: 50px;
     font-size: 80px;
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
 }
-.sec7_box{
+
+.sec7_box {
     border: 1px solid;
     border-radius: 5px;
     padding: 85px 25px;
     text-align: center;
     /* justify-content: center; */
 }
-.sec7_box h3{
-padding: 20px 0px;
+
+.sec7_box h3 {
+    padding: 20px 0px;
 }
-.sec7_box p{
-   
+
+.sec7_box p {
+
     /* text-align: justify; */
     text-align: center;
-   
+
 }
-.larrow{
+
+.larrow {
     padding: 10px;
     border: 1px solid;
     border-radius: 4px;
     display: inline-block;
     top: 39%;
     left: -20px;
-    background-color:white;
+    background-color: white;
 }
-.position_rel{
+
+.position_rel {
     position: relative;
 }
-.position_abs{
+
+.position_abs {
     position: absolute;
 }
-.rarrow{
+
+.rarrow {
     padding: 10px;
     border: 1px solid;
     border-radius: 4px;
     display: inline-block;
     top: 39%;
     right: -11px;
-    background-color:white;
+    background-color: white;
 }
-.col60{
+
+.col60 {
     width: 60%;
 }
-#form1 input,#form1 textarea,.submit_btn{
+
+#form1 input,
+#form1 textarea,
+.submit_btn {
     width: 100%;
     margin: 20px 0px;
     padding: 15px;
@@ -305,16 +362,19 @@ padding: 20px 0px;
     font-weight: 400;
     font-family: "Lato";
 }
-.submit_btn{
+
+.submit_btn {
     background-color: black;
     color: white;
     font-size: 30px;
     margin-top: 27px;
 }
-.col35{
+
+.col35 {
     width: 35%;
 }
-h2{
+
+.col35 h2 {
     font-size: 75px;
     letter-spacing: -2px;
     line-height: 100px;
@@ -322,20 +382,60 @@ h2{
     font-weight: 700;
     font-family: "Cardo";
 }
-.footer{
+
+.footer {
     background-color: #c4c4c4
 }
-.col25{
+
+.col25 {
     width: 25%;
+    font-size: 63px;
+    letter-spacing: -2px;
+    line-height: 63px;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Cardo";
+    margin-top: 75px;
 }
-.col20{
+
+.col20 {
     width: 20%;
     margin: 20px 0;
+    font-size: 21px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #232323;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: left;
 }
-.col80{
-    width: 80%;
+
+F .col20 div {
+    margin: 20px 0;
 }
-.footer-text{
+
+.col75 {
+    width: 70%;
+}
+
+.footer-text {
     padding: 10px 0;
     font-size: 20px;
+    font-size: 25px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #232323;
+    font-weight: 900;
+    font-family: "Lato";
+}
+
+.f_txt {
+    font-size: 21px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    color: #232323;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    padding-bottom: 70px;
 }
