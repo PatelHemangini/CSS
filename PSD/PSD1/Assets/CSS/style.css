@@ -18,11 +18,16 @@
 .container {
     width: 1200px;
     margin: 40px auto;
+
 }
 
 .row {
     display: flex;
     justify-content: space-between;
+}
+
+.overflow_hidden {
+    overflow: hidden;
 }
 
 .nav ul li {
@@ -48,6 +53,29 @@ button {
 
 .col1 {
     width: 30%;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-ab {
+    position: absolute;
+}
+
+.banner_left {
+
+
+    left: -34em;
+    z-index: -1;
+}
+
+.banner_right {
+    /* position: static; */
+    top: 83px;
+    left: 71em;
+    z-index: -1;
+
 }
 
 .col1 h1,
@@ -76,6 +104,26 @@ p {
 
 .bg_color {
     background-color: black;
+}
+
+.sec2left {
+    top: 28px;
+    left: -109px;
+}
+
+.sec2right {
+    left: 58em;
+    bottom: 3em;
+}
+
+.sec2left_dark {
+    top: 19em;
+    left: -6em;
+}
+
+.sec2right_dark {
+    top: 38.5em;
+    right: -3em;
 }
 
 .col40 {
@@ -127,8 +175,17 @@ span {
     margin: 20px 0px;
 }
 
+.sec3_light {
+    right: -27em;
+}
+
+.sec3_dark {
+    top: 30em;
+    left: 7em;
+}
+
 .col45 {
-    margin: 80px auto;
+    margin: 12em auto;
     width: 45%;
     text-align: center;
 
@@ -154,7 +211,10 @@ span {
     margin-top: 50px;
     text-align: left;
 }
-
+.tape{
+    top: 17em;
+    left: -2em;
+}
 .col50_40 {
     width: 40%;
     font-family: "Cardo";
@@ -191,7 +251,7 @@ span {
 .text {
     width: 50%;
     color: white;
-    padding: 0px 60px;
+    padding: 0px 50px;
 
 }
 
@@ -199,20 +259,20 @@ span {
     width: 45%;
 
 }
+.sec5_light{
+    bottom: -46px;
+    left: -165px;
 
-img {
-    width: 100%;
 }
-
 .box1 {
-    padding-bottom: 10px;
+    padding-bottom: 42px;
     font-family: "Cardo";
     font-size: 40px;
 }
 
 .box2 {
-    padding-top: 40px;
-    padding-right: 20px;
+    padding-top: 55px;
+
 }
 
 .box2 h4 {
@@ -272,7 +332,10 @@ img {
 .pad_t_b {
     padding: 80px 0px;
 }
-
+.sec7_right{
+    bottom: -26px;
+    right: -216px;
+}
 .sec7_txt {
     /* width: 50%; */
     font-size: 50px;
@@ -386,7 +449,10 @@ img {
 .footer {
     background-color: #c4c4c4
 }
-
+.footer_line{
+    bottom: 2em;
+    left: -29em;
+}
 .col25 {
     width: 25%;
     font-size: 63px;
