@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .slider-item img{
+        .slider-item img {
             width: 30%;
-           
+
         }
     </style>
 </head>
+
 <body>
     <div class="slider">
-    <div class="slider-item"><img src="./image/01image.jpg" alt="" class="img1" id="img1"></div>
-    <div class="slider-item"><img src="./image/02image.jpg" alt="" class="img2" id="img2"></div>
-    <div class="slider-item"><img src="./image/03image.jpg" alt="" class="img3" id="img3"></div>
-    <div class="slider-item"><img src="./image/04image.jpg" alt="" class="img4" id="img4"></div>
+        <div class="slider-item"><img src="./image/01image.jpg" alt="" class="img1" id="img1"></div>
+        <div class="slider-item"><img src="./image/02image.jpg" alt="" class="img2" id="img2"></div>
+        <div class="slider-item"><img src="./image/03image.jpg" alt="" class="img3" id="img3"></div>
+        <div class="slider-item"><img src="./image/04image.jpg" alt="" class="img4" id="img4"></div>
     </div>
     <button class="back" id="back">Back</button>
     <button class="back" id="forward">forward</button>
     <script>
-        let sliderdata=document.getElementsByClassName("slider-item");
-        let counter=0;
+        let sliderdata = document.getElementsByClassName("slider-item");
+        let counter = 0;
         function slider(params) {
             for (let index = 0; index < sliderdata.length; index++) {
-                sliderdata[index].style.display="none"
+                sliderdata[index].style.display = "none"
+
+            }
+            sliderdata[counter].style.display = "block"
+            counter++;
+            if (counter >= sliderdata.length) {
+                counter = 0;
+            }
+
+        }
+        function back() {
+            // sliderdata=document.getElementsByClassName("slider-item");
+            for (let index = 0; index < sliderdata.length; index++) {
+                sliderdata[index].style.display = "none"
                 
             }
-            sliderdata[counter].style.display="block"
-            counter++;
-           if(counter>=sliderdata.length){
-            counter=0;
-           }
-                     
-        }
-        function back(){
-            
-            for (let index = 2; index >=0; index--){
-                sliderdata[index].style.display="none";
-            //    console.log(sliderdata[index]);
-            }
-            // counter=index;
-            // sliderdata[counter].style.display="block"
-            // counter--;
+            // for ( counter = sliderdata.lenth; counter <= 0; counter--) {
+            //     console.log(counter);
+            //     console.log("slider data", sliderdata[counter]);
+            //     // sliderdata[counter].style.display = "block";
+
+            // }
            
+            counter = sliderdata.length-1;
+            // console.log(counter);
+            // console.log("slider data", sliderdata[counter]);
+
+            sliderdata[counter].style.display = "block";
+            counter--;
+            if (counter <= 0) {
+                counter = sliderdata.length;
+            }
+            // console.log("slider data", sliderdata[counter]);
         }
         // slider();
-        document.getElementById("forward").addEventListener("click",function() {
+        
+        document.getElementById("forward").addEventListener("click", function () {
             setTimeout(slider);
         })
-        document.getElementById("back").addEventListener("click",function() {
+        document.getElementById("back").addEventListener("click", function () {
             setTimeout(back);
         })
     </script>
 </body>
+
 </html>
