@@ -9,38 +9,42 @@
     <table>
         <tr>
             <td> <label for="username">username</label></td>
-            <td> <input type="text" id="username" onkeyup="uname(this)"></td>
+            <td> <input type="text" id="username" onblur="uname(this)"></td>
             <td><span id="usernameerror"></span></td>
         </tr>
         <tr>
             <td> <label for="password">password</label></td>
-            <td> <input type="text" id="password" onkeyup="pass(this)"></td>
+            <td> <input type="text" id="password" onblur="pass(this)"></td>
             <td><span id="passworderror"></span></td>
         </tr>
         <tr>
             <td> <label for="email">Email</label></td>
-            <td> <input type="text" id="email" onkeyup="email(this)"></td>
+            <td> <input type="text" id="email" onblur="email(this)"></td>
             <td><span id="emailerror"></span></td>
         </tr>
         <tr>
             <td> <label for="mobileno">Mobile No</label></td>
-            <td> <input type="text" id="mobileno" onkeyup="mobileno(this)"></td>
+            <td> <input type="text" id="mobileno" onblur="mobileno(this)"></td>
             <td><span id="mobilenoerror"></span></td>
         </tr>
         <tr>
-            <td colspan="3" align="center"><button>Submit</button></td>
+            <td colspan="3" align="center"><input type="submit" id="submit"></td>
         </tr>
     </table>
 
     <script>
         function uname(u) {
-            var UnameEx=/^[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){6,18}[a-zA-Z0-9]+$/;
+            var UnameEx=/^([a-zA-Z0-9]{6,18})+$/;
             console.log(UnameEx.test(u.value));
+            
             if(UnameEx.test(u.value)==false){
                 document.getElementById("usernameerror").innerText="This Username is invalid"
            }
            else{
             document.getElementById("usernameerror").innerText=""
+           }
+           if(u.value==""){
+            document.getElementById("usernameerror").innerText="This field is required"
            }
 
         }
@@ -53,10 +57,9 @@
            else{
             document.getElementById("passworderror").innerText=""
            }
-        //    let inp = document.getElementById("username");
-        //    if (inp.value == "") {
-        //         document.getElementById("passworderror").innerText =" This field is required "
-        //    }
+           if(p.value==""){
+            document.getElementById("passworderror").innerText="This field is required"
+           }
         }
           function email(e) {
             
@@ -68,7 +71,9 @@
            else{
             document.getElementById("emailerror").innerText=""
            }
-          
+           if(e.value==""){
+            document.getElementById("emailerror").innerText="This field is required"
+           }
         }
         function mobileno(m) {
             
@@ -80,7 +85,9 @@
            else{
             document.getElementById("mobilenoerror").innerText=""
            }
-          
+           if(m.value==""){
+            document.getElementById("mobilenoerror").innerText="This field is required"
+           }
         }
     </script>
 </body>
